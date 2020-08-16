@@ -18,7 +18,7 @@ body {
 }
 
 .page {
-	background-color: #fff;
+	/* background-color: #fff; */
 }
 
 footer {
@@ -36,7 +36,7 @@ nav {
     margin: 20px auto;
     height: 60px;
     width: 100%;
-    background: pink;
+    /* background: pink; */
 }
 header .container {
 	padding-top: 300px;
@@ -83,36 +83,74 @@ header h2 {
 }
 
 #background-layer {
-    position: fixed;
+    position: absolute;
+    width: 100%;
     top: 0;
-    /* z-index: -999999; */
+    z-index: -100;
 }
 
 #rect-3 {
-    position: fixed;
+    position: absolute;
     right: -500px;
     height: 1004.48px;
-    opacity: 0.9;
+    opacity: 0.8;
     border-radius: 100px;
   /* background-color: #FFD400; */
 }
 
+#rect-4 {
+    position: absolute;
+    top: 60px;
+    right: 400px;
+    height: 142.86px;
+    width: 142.86px;
+    opacity: 0.9;
+    transform: rotate(-142deg);
+}
+
+.a-versatile-solution {
+  height: 61px;
+  color: #171C34;
+  font-family: Poppins;
+  letter-spacing: 0;
+  line-height: 65px;
+  text-align: center;
+}
+.copy-1 {
+  height: 56px;
+  color: #919AA3;
+  font-family: Poppins;
+  letter-spacing: 0;
+  line-height: 28px;
+  text-align: center;
+}
+
+.blueButton{
+    color: white;
+    padding: 10px;
+    height: 60px;
+    width: 180px;
+    border-radius: 8px;
+    background-color: #0074E4;
+    box-shadow: 0 5px 20px 0 rgba(7,42,68,0.1);
+}
+
+.blurb-stuff div {
+    text-align: center;
+}
+.bio img {
+    width: 150px;
+    border-radius: 50%;
+}
 </style>
 </head>
 <body>
 
-    <div id="background-layer">
-        <img id="rect-3" src="images/rect-3.png">
-        <img id="rect-4" src="images/rect-4.png">
-    </div>
 
 	<div class="container page">
         <nav class="row">
             <div class="col-xs-2">
                 <img src="images/logo.png">
-                <!-- <span>About us</span>
-                <span>About us</span>
-                <span>About us</span> -->
             </div>
             <div class="col-xs-2">
             </div>
@@ -120,35 +158,112 @@ header h2 {
                 <div>
                 Login
                 </div>
-                <div>
-                Get Started
+                <div style="float: right;">
+                    <a class="blueButton">GET STARTED</a>
                 </div>
             </div>
         </nav>
+
+
 
         <div class="row">
 			<div class="col-xs-6">
                 <h1 class="reliability-when-it">Reliability when it really matters</h1>
                 <span class="we-can-help-you-comm">We can help you communicate with those who matter most to your organisation in an instant</span>
+                <div style="margin-top: 20px;">
+                    <a class="blueButton">GET STARTED</a>
+                </div>
 			</div>
 			<div class="col-xs-6">
                 <img id="group-9" src="images/screenshot.png">
 			</div>
 		</div>
 
-			<h2>Ok here's some dummy text:</h2>
-		<div class="row">
-			<div class="col-xs-12 col-sm-4">
-<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+
+
+<section>
+        <div class="row">
+            <h1 class="a-versatile-solution">A versatile solution for all your communication needs.</h1>
+            <div class="copy-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</div>
+        </div>
+
+
+        <div class="row blurb-stuff">
+            <div class="col-xs-12 col-sm-4">
+                <img src="images/meditation.png">
+<p>Integrate with our management system to enable advanced workflow functionality. Engage with volunteers and staffs with updates, alerts and confirmations.</p>
 			</div>
 			<div class="col-xs-12 col-sm-4">
-<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <img src="images/sms.png">
+<p>Send emergency information, time critical updates, and staff rostering SMS alerts when urgent communications are needed.</p>
 			</div>
 			<div class="col-xs-12 col-sm-4">
-<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <img src="images/feasibility.png">
+<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
 			</div>
 		</div>
 	</div>
+</section>
+
+
+<section>
+    <div class="row">
+        <h1 class="a-versatile-solution">User Experience, redefined.</h1>
+        <div class="copy-1">Integrated with "Spark", a wildfire simulation toolkit for fire prediction and anlysis by Data61 and CSIRO.</div>
+    </div>
+    <div class="row">
+        <div style="text-align: center;" class="col-xs-12">
+            <img src="images/WorldMap.png">
+        </div>
+    </div>
+    <div class="row">
+        <div style="text-align: center;" class="col-xs-12">
+            <a class="blueButton">GET STARTED</a>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <div class="row">
+        <h1 class="a-versatile-solution">Our Team</h1>
+        <div class="copy-1">Ipsum Loret</div>
+    </div>
+    
+
+    <div class="row blurb-stuff bio">
+        <div class="col-xs-4">
+            <img src="images/team/david.jpg">
+<p>David is a bioinformatician with the Peter MacCallum Cancer Centre. He does full stack engineering and loves hackathons.</p>
+<p>David Ma</p>
+        </div>
+        <div class="col-xs-4">
+            <img src="images/team/renee.jpg">
+<p>UX & UI Designer at Symplicit. Passionated about crafting the best possible experience that meaningfully impact the lives of others.</p>
+<p>Renee Fok</p>
+        </div>
+        <div class="col-xs-4">
+            <img src="images/team/grace.jpg">
+<p>Computer Science minor in second year of university. Majors in Chemistry. Enthusiastic about cosmetic formulation.</p>
+<p>Grace Tang</p>
+        </div>
+    </div>
+
+    <div class="row blurb-stuff bio">
+        <div class="col-xs-4 col-xs-offset-2">
+            <img src="images/team/amy.jpg">
+<p>Amy is a passionate hacker and new mother of 2! Amy is exhausted most days and not available for daycare. Amy is a hodgepodge mix of hackathon human. CyberSecurity. Google Dorking. Script Kiddy.</p>
+        </div>
+        <div class="col-xs-4">
+            <img src="images/team/brian.jpg">
+<p>"Brian is a comptuer science student from Malaysia"</p>
+        </div>
+    </div>
+
+
+</section>
+
 
 	<footer>
 		<div class="container">
@@ -158,7 +273,15 @@ header h2 {
 			</div>
 		</div>
 	</footer>
-	<link rel="stylesheet" href="/css/main.css">
+
+
+
+    <div id="background-layer">
+        <img id="rect-4" src="images/rect-4.png">
+        <img id="rect-3" src="images/rect-3.png">
+    </div>
+
+    <link rel="stylesheet" href="/css/main.css">
 	<script src="/js/vendor.min.js"></script>
 	<script src="/js/scripts.min.js"></script>
 </body>
